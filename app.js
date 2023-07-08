@@ -23,7 +23,7 @@ window.addEventListener("load", function() {
       preloader.addEventListener("transitionend", function() {
         preloader.style.display = "none";
       });
-    }, 1500); // Change the value (in milliseconds) to adjust how long the preloader is displayed
+    }, 1200); // Change the value (in milliseconds) to adjust how long the preloader is displayed
   });
 
 // main file
@@ -56,9 +56,9 @@ window.addEventListener("scroll", ()=>{
 
     authorName.style.transform= `translateY(${offsetY * 0.5}px)`
     nameContainer.style.backgroundPositionY=`${offsetY* 0.5}px`
-    aboutMeContainer.style.backgroundPositionY= `${offsetY * 2}px`
+    // aboutMeContainer.style.backgroundPositionY= `${offsetY * 2}px`
     myDescContainer.style.backgroundPositionY= `${-offsetY * 0.5}px`
-    aboutMe.style.transform= `translateX(calc(160vh - ${offsetY}px)) `
+    aboutMe.style.transform= `translateX(calc(140vh - ${offsetY}px)) `
     myDesc.style.transform= `translateX(calc(-140vh + ${offsetY}px)) `
     // projectsTitle.style.transform= `translateX(calc(320vh - ${offsetY}px)) `
     laptops[0].style.transform= `translateY(calc(-350vh + ${offsetY}px)) `
