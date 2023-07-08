@@ -5,30 +5,36 @@
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     
-   <div class="container">
+    <div  class="container">
       
      <!-- PRELOADER -->
-        <div  id="preloader">    
-            <p id="loading-text"><i>On &nbsp;</i> </p> 
-            <p id="loading-textt"><i>my &nbsp;</i></p> 
-            <p id="loading-texttt"><i>way</i></p> 
-        </div> 
-        
+            <div id="preloader">    
+                <p id="loading-text"><i>Get &nbsp;</i> </p> 
+                <p id="loading-textt"><i>Set &nbsp;</i></p> 
+                <p id="loading-texttt"><i>&lt;Code&gt;</i></p> 
+            </div> 
+            
         <!-- INTRODUCTION -->
         <div class="intro">
-             
-            <div class="nameContainer dark">            
+            
+            
+            <div class="nameContainer dark">
+                <!-- <div class="nameContainer light">    you can add bg image or url to container -->
+                <!-- use background image or color to show deep effect -->
+                          
+                     
+
                         <ul class="navlist">
-                          <li><a href="#">AKSHAY SHELAR</a></li>
-                          <li><a href="#">WORK</a></li>
-                          <li><a href="#">SOCIALS</a></li>
-                          <li><a href="#">CONTACT</a></li>
+                          <li><a href="#about">AKSHAY SHELAR</a></li>
+                          <li><a href="#projects">PROJECTS</a></li>
+                          <li><a href="#connect">CONTACT</a></li>
                         </ul>
-        
+            
+                         <!-- <button id="themeSwitch" class="colorMode">Switch Theme</button>                -->
+
                         <div class="textContainer">
                             <h1 class="myName"><i>Akshay Shelar <span class="is-a"> is a</span></i></h1>
                             <h1 class="name"><i>Full Stack Developer</i></h1>
@@ -40,7 +46,7 @@
                         <p class="extra">scroll</p>
                 </div>
                     
-            <div class="aboutMeContainer purple">
+            <div id="about" class="aboutMeContainer purple">
                 <h2 class="aboutMe">ABOUT ME</h2>
                 <p class="myPara">Hello, World ! I'm Akshay Shelar, a well-rounded Web Developer with a passion for code, visual design, and interaction.
                      I enjoy creating engaging and user-friendly digital experiences.</p>
@@ -57,6 +63,9 @@
                                 <li>CSS</li>
                                 <li>JavaScript</li>
                                 <li>React</li>
+                              
+                                
+                                
                             </ul>
                         </div>
                         <div>
@@ -67,6 +76,7 @@
                                 <li>Adobe XD</li>
                                 <li>Adobe Photoshop</li>
                             </ul>
+                           
                         </div>
                         <div>
                             <h2 class="skillsTitle">Backend Developer</h2>
@@ -77,27 +87,32 @@
                                 <li>Mongo DB</li>
                                 <li>Postman</li>
                             </ul>
-                        </div>                               
-                    </section> 
-                </div>
+                        </div>
+                      
+                        
+                    </section>
+            
             </div>
-      <!-- PROJECTS --> 
-        <div class="projects">
+        </div>
+  <!-- PROJECTS --> 
+        <div id="projects" class="projects">
             <h1 class="projectsTitle">01</h1>
             <p class="projectPara">PROJECTS</p>
-
+<!-- 1 -->
             <div class="project">
                 <div class="laptop">
                     <img src="./img/laptop.png" alt="phone">
                     <div class="laptopScreen">
                         <img src="./img/laptopApp.png" alt="" class="laptopApp">
+                        
                     </div>
                     
-                </div>                
+                </div>
+                
                 <div class="projectDetail">
                     <h1 class="projectTitle">E-commerce Website</h1>
                     <p class="projectDesc">
-                        A captivating, mobile and web responsive e-commerce platform for Uniton.</br> Enhancing the clothing brand with seamless
+                        E-commerce design sytem for <b style="color: rgb(117, 65, 169);">Uniton.</b></br> Enhancing the clothing brand with seamless
                          shopping experiences on web and mobile devices."</p>
                          <ul class="langUsed">
                             <li>React</li>
@@ -112,6 +127,7 @@
                          </button>
                 </div>
             </div>
+
  <!-- 2 --> 
             <h1 class="projectsTitle">02</h1>
             <p class="projectPara">PROJECTS</p>
@@ -121,27 +137,28 @@
                     <img src="./img/laptop.png" alt="phone">
                     <div class="laptopScreen">
                         <img src="./img/laptopApp1.png" alt="" class="laptopApp">
-                </div>
+                        
+                    </div>
                     
-                </div>                
+                </div>
+                
                 <div class="projectDetail">
                     <h1 class="projectTitle">Admin Dashboard</h1>
                     <p class="projectDesc">
-                        A captivating, mobile and web responsive e-commerce platform for Uniton, enhancing the clothing brand with seamless
-                         shopping experiences on web and mobile devices."</p>
+                        React admin dashboard, offering streamlined data management, analytics, and seamless user experience.</p>
                          <ul class="langUsed">
                             <li>React</li>
-                            <li>Redux</li>
                             <li>Node.js</li>
                             <li>Express</li>
                             <li>styled components</li>
-            
                          </ul>
                          <button class="projectButton">
                             learn More
                          </button>
                 </div>
             </div>
+            
+
  <!-- 3 --> 
             <h1 class="projectsTitle">03</h1>
             <p class="projectPara">PROJECTS</p>           
@@ -154,15 +171,24 @@
                     </div>
                 </div>
                 <div class="projectDetail">
-                    <h1 class="projectTitle">Project management</h1>
+                    <h1 class="projectTitle">Project Management</h1>
                     <p class="projectDesc">
-                        Crop mapping and crop monitoring using infrared Satellite. </br> <span style="color: rgb(64, 164, 112);">Freelancing project with Cropinno and Patanjali</span></p>
-                        <button class="projectButton">
-                            learn More
+                        Crop mapping and crop monitoring using infrared Satellite. </br> Freelancing project with <b style="color:rgb(117, 65, 169);">Cropinno</b> and <b style="color:rgb(117, 65, 169);">Patanjali</b></span></p>
+                        <ul class="langUsed">
+                            <li>Analytical</li>
+                            <li>Team Management</li>
+                            <li>Resource Allocation</li>
+                            <li>MS Office</li>
+            
+                         </ul>
+                        <button class="projectButton1">
+                            STATUS
                         </button>
                 </div>
             </div>
-            </div>                            
+            </div>
+                        
+           
  <!-- 4 --> 
             <h1 class="projectsTitle">04</h1>
             <!-- <p class="projectPara">PROJECTS</p> -->
@@ -175,19 +201,27 @@
                     </div>
                 </div>
                 <div class="projectDetail">
-                    <h1 class="projectTitle">Fashion Presentation Design</h1>
-                    <p class="projectDesc">
+                    <h1 class="projectTitle">Visual Presentation Design</h1>
+                    <p class="projectDesc">Fashion presentation design and technical assistance for</br> <b style="color:rgb(117, 65, 169);">Central </b> and <b style="color:rgb(117, 65, 169);">The Breaking Point</b></span>
                          </p>
-                        <button class="projectButton">
-                            learn More
+                         <ul class="langUsed">
+                            <li>Visual Design</li>
+                            <li>Communication</li>
+                            <li>Technical</li>
+                            <li>Backstage Coordination</li>
+                            
+            
+                         </ul>
+                        <button class="projectButton1">
+                            STATUS
                         </button>
                 </div>
             </div>
-            <h1 class="projectsTitle">05</h1>
+            <h1 class="projectsTitle">##</h1>
             <!-- <p class="projectPara">PROJECTS</p>    -->
             
             <!-- GIT-HUB -->
-        <div class="githubContainer">
+        <div class="githubContainer dark">
             <h1 class="githubTitle">FOR MORE PROJECTS</h1>
             <div class="githubChart">
                 <div class="dates">
@@ -206,12 +240,15 @@
                 </div>
                 <div class="boxContainer"></div>
                 <h1 class="githubTitle">ON GITHUB</h1>
-            </div>            
+            </div>
+            
+            
         </div>
- <!-- CONTACT -->
+        
+        <!-- CONTACT -->
         <div class="connectContainer">
-            <h2 class="connect">CONNECT</h2>
-                <section>
+            <h2 id="connect" class="connect">CONNECT</h2>
+                <section class="iconContainer">
                       <a href="https://www.instagram.com/akshay__shelar_" target="_blank">
                         <img class="socialIcons" src="./img/ig.png" alt="Instagram">
                       </a>
@@ -223,10 +260,13 @@
                       </a>
                       <a href="https://www.linkedin.com/in/akshay-shelar-a87193178/" target="_blank">
                         <img class="socialIcons" src="./img/linkedin.png" alt="Instagram">
-                      </a>              
+                      </a>
+                
                 </section>
+                <p id="backToTop">ask-shay</p>
         </div>
     </div>
+
   <script src="./app.js"></script>
 </body>
 </html>     
