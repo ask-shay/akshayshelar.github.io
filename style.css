@@ -1,9 +1,27 @@
 *{
     padding:0;
     margin: 0;
-   font-family: 'Open Sans', sans-serif;
+    font-family: 'Basement Grotesque', sans-serif;
 }
 
+@font-face {
+    font-family: 'Basement Grotesque';
+    src: url('fonts/BasementGrotesque-Black_v1.202.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  /* @font-face {
+    font-family: 'Aileron';
+    src: url('fonts/Aileron-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  } */
+
+  p, li ,li a, button{
+    font-family: 'Aileron', sans-serif;
+  }
+  
 .container{
     background-color:rgb(9, 9, 9)  ;
     overflow: hidden;
@@ -21,47 +39,49 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color:rgb(216, 215, 215);
-    background: rgb(117, 67, 168) url("./img/bg1.png");
-    display: flex;
+    background-color:black;
+    background: rebeccapurple;
     justify-content: center; 
     align-items: center;
     text-align: center;
     z-index: 9999;
     opacity: 1;
     transition: transform 0.9s ease-in-out;
+    font-weight: bold;
   }
 
   #loading-text {
+    padding-top: 38vh;
     font-size: 50px;
     /* opacity: 0.8; */
-    color: #dfdbdb;
-    animation: slideIn 0.5s ease-in-out forwards;
+    color: #111 ;
+
+    animation: slideIn 0.4s ease-in-out forwards;
   }
 
   #loading-textt {
     font-size: 50px;
-    /* opacity: 0.8; */
+    opacity: 0.85;
     color: #dfdbdb;
-    animation: slideIn 1s ease-in-out forwards;   
+
+    animation: slideIn 0.7s ease-in-out forwards;   
   }
   #loading-texttt {
     font-size: 50px;
-    /* opacity: 0.8; */
-    color: #dfdbdb;
-    animation: slideIn 1.5s ease-in-out forwards;  
+    color: rgb(64, 164, 112);
+    animation: slideIn 1.1s ease-in-out forwards;  
   } 
   @keyframes slideIn {
     0% { 
         opacity: 0;
-        transform: translateY(-100%); };
+        transform: translateX(-100%); };
     100% {
         opacity: 1; transform: translateY(0); }
   }
 
 .nameContainer {
     height: 100vh;
-    background-color:#111;
+    background-color:#000;
     overflow: hidden;
 }
 
@@ -71,18 +91,19 @@ flex:1;
 padding-top:65px;
 padding-left:53%;
 padding-right: 5%;
-justify-content: space-between;
+justify-content: space-between; 
 }
 
 .navlist li {
     list-style: none;
+
     /* color: #222; */
      }
 
 .navlist li a{
    text-decoration: none;
    color:#ccc;
-   /* letter-spacing: 1px; */
+   letter-spacing: 1px;
     }
 
 .textContainer {
@@ -106,8 +127,8 @@ justify-content: space-between;
   } 
 
 .name {
-    padding: 15px 100px;
-    font-size: 115px;
+    padding: 30px 30px;
+    font-size: 7vw;
     color: #666 ;
     text-align: center;
     justify-content: center;
@@ -133,7 +154,7 @@ justify-content: space-between;
     
     font-size: 89px;
     color:rgb(64, 164, 112);
-    padding-left: 47%;
+    padding-left: 42%;
     animation: blur 4.4s ease-in-out ;
 }
 
@@ -154,21 +175,23 @@ justify-content: space-between;
 }
 
 .dark{
-    background: #000 url("./img/bg1.png");
+    background: #000 url("./img/bg1.jpg");
 }
 
 .purple{
-    background:rgb(117, 67, 168) url("./img/bg1.png");
+    background:rebeccapurple
+     /* url("./img/bg1.png"); */
 }
 
 .theme{
-    background:#111;
+    background: linear-gradient(to bottom, #111, #000);
 }
+
 
 .aboutMe {
     position: absolute;
     display: flex;
-    font-size: 15vw;
+    font-size: 14.5vw;
     color: white;
     line-height: 100vh;
     cursor: default;
@@ -177,16 +200,16 @@ justify-content: space-between;
 }
 
 .myPara{
-    padding: 325px 205px;
+    padding: 300px 205px;
     display: flex;
     position: relative;
-    font-size: 25px;
+    font-size: 24px;
     align-items: center;
     text-align: justify;
-    color: #000;
+    color: #111;
     /* letter-spacing: 0.2px; */
     word-spacing: 0.2px;
-    font-weight: 450;
+    font-weight: bold;
 }
 
 .myDescContainer{
@@ -207,12 +230,26 @@ justify-content: space-between;
 
 .mySkills{
     display: flex;
-    /* flex-direction: row; */
-    justify-content: space-between;
+    padding: 30vh 12vw;
+}
+
+
+.skillsTitle {
+    color: rgb(64, 164, 112);
+    /* align-items: center; */
     text-align: center;
     justify-content: center;
-    overflow: hidden;
-    padding: 220px;
+    /* font-size: 25px; */
+    /* display: flex; */
+}
+
+.skillDisc{
+    color: #ccc;
+    padding: 70px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 17px;
 }
 
 .mySkills ul li{
@@ -222,24 +259,6 @@ justify-content: space-between;
     list-style: none;
     padding: 3px;
 }
-
-.skillsTitle {
-    color: rgb(64, 164, 112);
-    align-items: center;
-    text-align: center;
-    font-size: 25px;
-    /* display: flex; */
-}
-
-.skillDisc{
-    color: white;
-    padding: 50px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    font-size: 17px;
-}
-
 .projects {
     display: flex;
     flex-direction:column;
@@ -250,14 +269,15 @@ justify-content: space-between;
 .projectsTitle{
     display: flex;
     position: relative;
-    font-size: 250px;
+    font-size: 30vh;
+    padding-top: 10px;
     color:white;
     justify-content: center;
     align-items: center;
     text-align: center;
-    opacity: 0.05;
+    opacity: 0.08;
     height: 250px;
-    background-color: #555;
+    background-color: #111;
     overflow: hidden;
 }
 
@@ -284,8 +304,7 @@ justify-content: space-between;
     height: 98vh;
     overflow: hidden;
     padding: 0px 100px;
-    /* background: linear-gradient(to top black transparent); */
-
+    background: linear-gradient(to bottom, #111, #000);
 }
 
 /* .project:nth-child(2n){
@@ -339,7 +358,7 @@ justify-content: space-between;
     font-size: 20px;
     color:#999;
     text-align: justify;
-    line-height: 40px;
+    line-height: 35px;
     background-color: #161616;
 }
 
@@ -378,11 +397,38 @@ justify-content: space-between;
     background-color: rebeccapurple;
     color: #ffffff;
 }
-
 .projectButton:hover.projectButton::after{
      transform:translate(100%);
 }
 
+.projectButton1{
+    padding: 12px 20px;
+    background-color: transparent;
+    border: 2px solid #666;
+    color: #666;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.projectButton1::after{
+    content:"Completed";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100% ;
+    transition: 0.8s all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rebeccapurple;
+    color: #ffffff;
+}
+
+.projectButton1:hover.projectButton1::after{
+    transform:translate(100%);
+}
 .laptop{
     /* width: 600px;
     height: 379px; */
@@ -441,6 +487,7 @@ justify-content: space-between;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    background-color: #000;
 }
 
 .githubTitle{
@@ -506,29 +553,49 @@ justify-content: space-between;
         color: fff;
         line-height: 100vh;
         cursor: default;
-        opacity: 0.02;
+        opacity: 0.04;
         overflow: hidden;
 }
 
+.iconContainer{
+    padding-top: 42vh;
+    padding-left: 41vh;
+}
 
+.iconContainer a{
+    padding: 80px;
+}
 .socialIcons{
-    position: relative;
-    padding-top: 46vh;
-    padding-left: 31vh;
     width:70px;
     height: 70px; 
-    opacity: 0.3; 
+    opacity: 0.5; 
     cursor: pointer;
 }
 .socialIcons:hover{
     opacity: 0.9;
 }
 
+#backToTop{
+    color: #888;
+    font-size: 2.5vh;
+    text-align: center; 
+    padding-top: 10%;
+    list-style: none;
+    text-decoration: none;
+
+}
+
 @media screen and (max-width:1024px) {
 
     .navlist{
-        display: none;
-    }
+        display: flex;
+        flex:1;
+        padding-top:5vh;
+        padding-left:7vw;
+        padding-right: 5%;
+        font-size: 3vw;
+        }
+        
 
     .myName{
         vertical-align: center;
@@ -566,7 +633,8 @@ justify-content: space-between;
         justify-content: center;
         height: 25vh;
         flex:none;
-        font-size: 55px;
+        font-size: 50px;
+        opacity: 0.4;
     }
 
     .myPara{
@@ -581,18 +649,20 @@ justify-content: space-between;
 
     .myDesc{
         transform: none !important;
-        font-size: 55px;
-        padding-top: 0px; 
-        padding-left: 110px;
+        font-size: 50px;
+        line-height: 7vh;
+        padding-top: 20px; 
+        padding-left: 23vw;
         text-align: center;
         justify-content: center;
+        opacity: 0.4;
     }
 
     .mySkills{
        transform: none !important;
        display: flex;
        flex-direction: column;
-       padding: 15px;
+       padding: 90px;
     }
 
     .skillsTitle{ 
@@ -606,7 +676,7 @@ justify-content: space-between;
     }
     .mySkills ul li{
         font-size: 13px;
-        padding: 10px;
+        padding: 8px;
     }
 
     .projects{
@@ -621,6 +691,7 @@ justify-content: space-between;
         justify-content: center;
         align-items: center;
         text-align: center;
+        padding-top: 15px;
         
     }
     .projectPara{   
@@ -647,17 +718,16 @@ justify-content: space-between;
     }
     
     .laptop img {
-        width: 98%;
+        width: 98vw;
         height: auto;
     }
     
     .laptopScreen{
-        position: absolute;
-        flex: 1.5;
-        width: 74.9vw;
-        height: 48vw;
-        left: 43.2px;
-        top: 51px;
+        /* position: absolute; */
+        width: 74vw;
+        height: 22vh;
+        left: 12vw;
+        top: 5.8vh;
     }
     
     .ipad{
@@ -669,41 +739,41 @@ justify-content: space-between;
     }
     
     .ipad img {
-        width: 85%;
+        width: 85vw;
         height: auto;
     }
     
     .ipadScreen{
-        width: 350px;
-        height: 186px;
+        width: 80vw;
+        height: 22.8vh;
         position: absolute;
-        top: 91.4px;
-        left: 12.5px;
+        top: 91.2px;
+        left: 9.9vw;
         overflow: scroll;
-        border-radius: 18px;
+        border-radius: 3px;
     }
     
     .phone{
         transform: none !important;
         padding-left: 0;
         padding-bottom: 0;
-        padding-top: 40px;
+        padding-top: 15px;
     }
 
     .phone img{
-        width: 100%;
+        width: 55vw;
     }
     .phoneScreen {
-        width:155px;
-        height:332px;
+        width:48vw;
+        height:47.9vh;
         position: absolute;
-        top: 50px;
-        left: 10px;
+        top: 3vh;
+        left: 3.2vw;
         border-radius: 17px;
         overflow: scroll;
     }
     .projectTitle{
-        font-size: 30px;
+        font-size: 6vw;
         
     }
     .projectDesc{
@@ -721,9 +791,10 @@ justify-content: space-between;
         padding: 10px;
     }
 
+
     .githubTitle{
         text-align: center;
-        font-size: 10vw;
+        font-size: 12vw;
     }
     
     .githubChart {
@@ -733,7 +804,7 @@ justify-content: space-between;
     .connect{
         transform: none !important;
         text-align: center; 
-        padding-left: 50px;
+        padding-left: 7vw;
         line-height: 30vh;
     }
 
@@ -744,5 +815,136 @@ justify-content: space-between;
         width:40px;
         height: 40px; 
     }
+
+.iconContainer{
+    padding-top: 0;
+    padding-left: 0;
+}
+.iconContainer a{
+    padding: 0px;
+}   
+
+}
+/* for Iphone 12 pro landscape */ 
+@media screen and (device-width: 844px) and (device-height: 390px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+
+    
+    .myDesc{
+        line-height: 15vh;
+        padding-top: 1px; 
+        padding-left: 43%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .mySkills{
+       transform: none !important;
+       display: flex;
+       flex-direction: row;
+       padding-top: 30px;
+    }
+
+    .skillsTitle{ 
+        font-size: 20px;
+        padding: 45px;
+    }
+
+    .skillDisc{
+        font-size: 13px;
+        padding: 15px;
+    }
+    .mySkills ul li{
+        font-size: 13px;
+        padding: 0px;
+    }
+
+    .laptop{
+        display: flex;
+        flex: 1;
+        width: 100vw;
+        transform: none !important;
+        padding-top: 30px;
+        padding-left: 0;
+    }
+    
+    .laptop img {
+        width: 35vw;
+        height: auto;
+        padding-right: 55px;
+        padding-bottom: 50px;
+    }
+
+    .laptopScreen{
+        width: 26.3vw;
+        height: 36vh;
+        left: 4vw;
+        top: 10vh;
+    }
+    .project{
+        display: flex;
+        flex-direction: row;
+        flex: 2 ;
+    }
+    .projectTitle{
+        display: flex;
+        padding-top: 40px;
+    }
+
+    .projectDesc{
+        font-size: 15px;
+        padding: 20px;
+        line-height: 19px;
+        text-align: justify;
+    }
+
+    
+    .ipad img {
+        width: 33vw;
+        height: auto;
+        padding-right: 60px;
+        padding-bottom: 40px;
+    }
+    
+    .ipadScreen{
+        width: 31vw;
+        height: 41vh;
+        position: absolute;
+        top: 91px;
+        left: 1vw;
+        overflow: scroll;
+        border-radius: 3px;
+    }
+    .phone img{
+        width: 15vw;
+    }
+    .phoneScreen {
+        width:13vw;
+        height:61vh;
+        top: 6vh;
+        left: 1vw;
+        border-radius: 8px;
+
+    }
+    .githubTitle{
+        text-align: center;
+        font-size: 6vw;
+    }
+    
+    .githubChart {
+    display: block;
+    }
+
+    .connect{
+        line-height: 100vh;
 }
 
+.iconContainer{
+    padding-top: 18vh;
+    padding-left: 41vh;
+}
+
+.iconContainer a{
+    padding: 20px;
+}   
+
+}
