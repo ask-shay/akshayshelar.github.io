@@ -613,24 +613,30 @@ opacity: 0.6;
         justify-content: center;
     }
 
+    
+    .nameContainer{
+        margin: 10px;
+    }
+    
     .myName{
         margin: 0;
-        font-size: 35px;
+        font-size: 45px;
         text-align: center;
         justify-content: center;
-        padding-top:20px;
+        margin-top:50px;
     }
     .is-a{
         font-size: 12px;
     }
 
     .name{
+        margin: 15px 0px;
         font-size: 60px;
     }
     
     .name1{
         padding: 0px;
-        font-size: 35px;
+        font-size: 45px;
         text-align: center;
         justify-content: center;
         line-height: 12vh;
