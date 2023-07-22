@@ -9,24 +9,22 @@ const projectsTitle = document.querySelector(".projectsTitle")
 const phone = document.querySelector(".phone")
 const laptops = document.querySelectorAll(".laptop")
 const ipad = document.querySelector(".ipad")
+const githubContainer =document.querySelector(".githubContainer")
 const boxContainer = document.querySelector(".boxContainer");
 const connectContainer = document.querySelector(".connectContainer")
 const connect = document.querySelector(".connect")
 
-// preload testing
-  
 window.addEventListener("load", function() {
     const preloader = document.getElementById("preloader");
   
     setTimeout(function() {
-      preloader.style.transform = "translateY(-100%)";
+      preloader.style.transform = "translateX(-100%)";
       preloader.addEventListener("transitionend", function() {
         preloader.style.display = "none";
       });
-    }, 1200); // Change the value (in milliseconds) to adjust how long the preloader is displayed
+    }, 1200);
   });
 
-// main file
 for(let i=0; i<365; i++){  
 
     const list = [
@@ -45,7 +43,6 @@ for(let i=0; i<365; i++){
         283, 284, 285, 323, 324, 325, 326,
       ];
 
-    // create div element
     const el = document.createElement("div");
     el.classList = list.includes(i) ? "box active" : "box";
     boxContainer.appendChild(el)
@@ -56,15 +53,13 @@ window.addEventListener("scroll", ()=>{
 
     authorName.style.transform= `translateY(${offsetY * 0.5}px)`
     nameContainer.style.backgroundPositionY=`${offsetY* 0.5}px`
-    // aboutMeContainer.style.backgroundPositionY= `${offsetY * 2}px`
     myDescContainer.style.backgroundPositionY= `${-offsetY * 0.5}px`
-    aboutMe.style.transform= `translateX(calc(140vh - ${offsetY}px)) `
-    myDesc.style.transform= `translateX(calc(-140vh + ${offsetY}px)) `
-    // projectsTitle.style.transform= `translateX(calc(320vh - ${offsetY}px)) `
+    githubContainer.style.backgroundPositionY= `${-offsetY * 0.5}px`
+    aboutMe.style.transform= `translateX(calc(120vh - ${offsetY}px)) `
+    myDesc.style.transform= `translateX(calc(-175vh + ${offsetY}px)) `
     laptops[0].style.transform= `translateY(calc(-350vh + ${offsetY}px)) `
     laptops[1].style.transform= `translateY(calc(-480vh + ${offsetY}px)) `
-    ipad.style.transform= `translateY(calc(-580vh + ${offsetY}px)) `
+    ipad.style.transform= `translateY(calc(-570vh + ${offsetY}px)) `
     phone.style.transform= `translateY(calc(-680vh + ${offsetY}px)) `  
-    connect.style.transform= `translateX(calc(990vh - ${offsetY}px)) `
-
+    connect.style.transform= `translateX(calc(960vh - ${offsetY}px)) `
 })
