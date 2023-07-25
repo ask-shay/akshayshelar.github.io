@@ -10,6 +10,11 @@
     font-weight: 800;
     font-style: normal;
 }
+
+body {
+    font-family: 'Basement Grotesque', sans-serif;
+}
+
   p, li ,li a,h4,h3, button{
     font-family: 'Aileron', sans-serif;
 }
