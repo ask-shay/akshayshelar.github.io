@@ -25,6 +25,30 @@ window.addEventListener("load", function() {
     }, 1200);
   });
 
+function openLink1() {
+    window.open('https://github.com/ask-shay/Uniton', '_blank');
+}
+
+function openLink2() {
+    window.open('https://github.com/ask-shay/Multi-Vision', '_blank');
+}
+
+window.addEventListener("scroll", ()=>{
+    let offsetY = window.scrollY
+
+    authorName.style.transform= `translateY(${offsetY * 0.5}px)`
+    nameContainer.style.backgroundPositionY=`${offsetY* 0.5}px`
+    myDescContainer.style.backgroundPositionY= `${-offsetY * 0.5}px`
+    githubContainer.style.backgroundPositionY= `${-offsetY * 0.5}px`
+    aboutMe.style.transform= `translateX(calc(120vh - ${offsetY}px)) `
+    myDesc.style.transform= `translateX(calc(-175vh + ${offsetY}px)) `
+    laptops[0].style.transform= `translateY(calc(-350vh + ${offsetY}px)) `
+    laptops[1].style.transform= `translateY(calc(-480vh + ${offsetY}px)) `
+    ipad.style.transform= `translateY(calc(-570vh + ${offsetY}px)) `
+    phone.style.transform= `translateY(calc(-680vh + ${offsetY}px)) `  
+    connect.style.transform= `translateX(calc(960vh - ${offsetY}px)) `
+})
+
 for(let i=0; i<365; i++){  
 
     const list = [
@@ -47,19 +71,3 @@ for(let i=0; i<365; i++){
     el.classList = list.includes(i) ? "box active" : "box";
     boxContainer.appendChild(el)
 }
-
-window.addEventListener("scroll", ()=>{
-    let offsetY = window.scrollY
-
-    authorName.style.transform= `translateY(${offsetY * 0.5}px)`
-    nameContainer.style.backgroundPositionY=`${offsetY* 0.5}px`
-    myDescContainer.style.backgroundPositionY= `${-offsetY * 0.5}px`
-    githubContainer.style.backgroundPositionY= `${-offsetY * 0.5}px`
-    aboutMe.style.transform= `translateX(calc(120vh - ${offsetY}px)) `
-    myDesc.style.transform= `translateX(calc(-175vh + ${offsetY}px)) `
-    laptops[0].style.transform= `translateY(calc(-350vh + ${offsetY}px)) `
-    laptops[1].style.transform= `translateY(calc(-480vh + ${offsetY}px)) `
-    ipad.style.transform= `translateY(calc(-570vh + ${offsetY}px)) `
-    phone.style.transform= `translateY(calc(-680vh + ${offsetY}px)) `  
-    connect.style.transform= `translateX(calc(960vh - ${offsetY}px)) `
-})
