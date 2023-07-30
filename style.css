@@ -48,24 +48,22 @@ body {
     opacity: 1;
     transition: transform 0.9s ease-in-out;
     font-weight: bold;
+    font-size: 50px;
 }
 
 #loading-text {
     padding-top: 38vh;
-    font-size: 50px;
     color: #aaa ;
     animation: slideIn 0.4s ease-in-out forwards;
 }
 
 #loading-textt {
-    font-size: 50px;
     opacity: 0.85;
     color: rebeccapurple;
     animation: slideIn 0.7s ease-in-out forwards;   
 }
 
 #loading-texttt {
-    font-size: 50px;
     color:rgb(34, 186, 108); 
     animation: slideIn 1.1s ease-in-out forwards;  
 } 
