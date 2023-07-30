@@ -48,7 +48,7 @@ body {
     opacity: 1;
     transition: transform 0.9s ease-in-out;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 55px;
 }
 
 #loading-text {
