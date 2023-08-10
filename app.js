@@ -19,9 +19,9 @@ window.addEventListener("load", function() {
   
     setTimeout(function() {
       preloader.style.transform = "translateX(-100%)";
-      preloader.addEventListener("transitionend", function() {
-        preloader.style.display = "none";
-      });
+      // preloader.addEventListener("transitionend", function() {
+      //   preloader.style.display = "none";
+      // });
     }, 1200);
   });
 
